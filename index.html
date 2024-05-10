@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <button><a href="../Formularios/pages/form1.html">form1</a></button>
+      <button><a href="../Formularios/pages/form2.html">form2</a></button>
+      <button><a href="../Formularios/pages/form3.html">form3</a></button>
+      <button><a href="../Formularios/pages/form4.html">form4</a></button>
+      <button><a href="../Formularios/pages/form5.html">form5</a></button>
+    </ul>
+    <form>
+      <h1>Club de la tercera edad</h1>
+      <label for="name">Nombre</label>
+      <input
+        type="tex"
+        id="name"
+        name="name"
+        placeholder="Ingrese su Nombre"
+      /><br />
+
+      <label for="surname">Apellido</label>
+      <input
+        type="tex"
+        id="surname"
+        name="surname"
+        placeholder="Ingrese su Apellido"
+      /><br />
+
+      <label for="age">Edad</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="Ingrese su Edad"
+      /><br /><br />
+
+      <p>Seleccione su genero</p>
+
+      <input type="radio" id="gender1" name="gender" />
+      <label for="gender1">Masculino</label><br />
+      <input type="radio" id="gender2" name="gender" />
+      <label for="gender2">Femenino</label><br /><br />
+
+      <p>Me siento viejuner:</p>
+      <input type="checkbox" id="yes" name="youth" />
+      <label for="yes">Si</label> <br />
+      <input type="checkbox" id="no" name="youth" />
+      <label for="no">No</label> <br /><br /><br />
+
+      <label for="commit">Escribe algo sobre ti:</label>
+      <br />
+      <textarea
+        id="commit"
+        cols="30"
+        rows="10"
+        placeholder="Me gusta el cafe por la mañana ...."
+      ></textarea>
+      <h3>Tus circunstancias:</h3>
+
+      <label for="mail">Correo electrónico:</label>
+      <input
+        type="email"
+        id="mail"
+        name="mail"
+        placeholder="Ejemplo@ejem...."
+      /><br />
+      <label for="tlf">Teléfono: </label>
+      <input
+        type="tel"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        id="tlf"
+        name="numTlf"
+        placeholder="0800 ...."
+      /><br />
+
+      <h1>Campos del formulario "Robo de bicicleta"</h1>
+
+      <label for="date">Fecha </label>
+      <input type="date" id="date" name="robberyDate" /><br />
+      <label for="time">Hora </label>
+      <input type="time" id="time" name="robberyTime" /><br />
+
+      <label for="color">Color de la bicicleta: </label>
+      <input type="color" id="color" name="biciColor" /><br /><br />
+
+      <label for="price">Valor de la bicicleta: </label>
+      <p>
+        1$
+        <input
+          type="range"
+          min="1"
+          max="1000"
+          id="price"
+          name="biciPrice"
+          step="any"
+        />1000$
+      </p>
+      <br /><br />
+
+      <label for="type">Tipo de bicicleta: </label>
+      <select name="biciType" id="type">
+        <optgroup label="Paseo">
+          <option value="señorial">señorial</option>
+          <option value="Anti-plebeyos">Anti-plebeyos</option>
+          <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+        </optgroup>
+        <optgroup label="Montaña">
+          <option value="Gamusinos">Gamusinos</option>
+          <option value="HuelefloresPremium">Hueleflores premium</option>
+          <option value="FangoLover">Fango lover</option>
+        </optgroup>
+        <optgroup label="Carreras">
+          <option value="Metroymedio">Metroymedio</option>
+          <option value="3DeLaTarde">
+            3 de la tarde (fluorescente edition)
+          </option>
+          <option value="Grupitors">Grupitors</option>
+        </optgroup></select
+      ><br />
+      <label for="accesory">Accesorios: selector multiple (al seleccionar mas de una opcion mantenga precionado "Ctrl")</label>
+      <select name="accesory" id="biciAccesory" multiple>
+        <option value="Ruedines">Ruedines</option>
+        <option value="Pegatinas">Pegatinas</option>
+        <option value="Cestita">Cestita</option>
+        <option value="BombaDeAire">Bomba de aire</option>
+        <option value="Timbre">Timbre</option>
+       
+      </select>
+    </form>
+  </body>
+</html>
