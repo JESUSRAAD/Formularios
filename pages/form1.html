@@ -1,15 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <ul>
+      <button><a href="../index.html">form1</a></button>
+      <button>
+        <a href="https://../Formularios/pages/form2.html">form2</a>
+      </button>
+      <button><a href="../Formularios/pages/form3.html">form3</a></button>
+      <button><a href="../Formularios/pages/form4.html">form4</a></button>
+      <button><a href="../Formularios/pages/form5.html">form5</a></button>
+    </ul>
     <form>
+      <div>
+        <h2>Rellene las opciones siguientes</h2>
+        <input type="radio" id="lengua" name="course" />
+        <label for="lengua">Lenguaje</label><br />
 
+        <input type="radio" id="math" name="course" />
+        <label for="math">Matematicas</label><br />
+        <input type="radio" id="history" name="course" />
+        <label for="history">Historia</label><br />
 
-        
+        <input type="radio" id="geografy" name="course" />
+        <label for="geografy">Geografias</label><br /><br />
+
+        <select name="course" multiple>
+          <option value="lengua">Lenguaje</option>
+          <option value="math">Matematicas</option>
+          <option value="history">Historia</option>
+          <option value="geografy">Geografias</option></select
+        ><br />
+        <label for="color">Elija un color: </label>
+        <input type="color" id="color" name="biciColor" /><br />
+
+        <label for="inst">Instituto</label>
+        <input type="tex" id="inst" name="inst" />
+
+        <label for="studys">Estudios elegidos</label>
+        <input type="tex" id="studys" name="studysElection" /><br />
+        <label for="foldier">Elija un fichero:</label>
+        <input type="file" id="foldier" /><br />
+
+        <input type="checkbox" id="monday" name="week" />
+        <label for="monday">Lunes</label> <br />
+        <input type="checkbox" id="Tuesday" name="week" />
+        <label for="Tuesday">Martes</label> <br />
+        <input type="checkbox" id="Wednesday" name="week" />
+        <label for="Wednesday">Miercoles</label> <br />
+        <input type="checkbox" id="Thursday" name="week" />
+        <label for="Thursday">Jueves</label> <br />
+        <input type="checkbox" id="Friday" name="week" />
+        <label for="Friday">Viernes</label> <br />
+        <input type="checkbox" id="Saturday" name="week" />
+        <label for="Saturday">Sabado</label> <br />
+      </div>
+      <div>
+        <h2>Por favor, complete estas opciones</h2>
+
+        <textarea
+          cols="45"
+          rows="6"
+          placeholder="Utilice este recuadro por favor"
+        ></textarea>
+        <br />
+        <label for="color">Elija un color: </label>
+        <input type="color" id="color" name="biciColor" /><br />
+
+        <input type="radio" id="lenguajeJava" name="Lenguaje" />
+        <label for="lenguajeJava">Java</label><br />
+
+        <input type="radio" id="lenguajePython" name="Lenguaje" />
+        <label for="lenguajePython">Python</label><br />
+        <input type="radio" id="lenguajeHTML" name="Lenguaje" />
+        <label for="lenguajeHTML">HTML</label><br />
+
+        <input type="radio" id="lenguajeVisual_basic" name="Lenguaje" />
+        <label for="lenguajeVisual_basic">Visual Basic</label><br />
+        <input type="radio" id="lenguajeCSS" name="Lenguaje" />
+        <label for="lenguajeCSS">CSS</label><br /><br />
+        <label for="name">Nombre</label>
+        <input type="tex" id="name" name="name" /><br />
+
+        <label for="surname">Apellido</label>
+        <input type="tex" id="surname" name="surname" /><br />
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="mail" /><br />
+        <label for="tlf">Teléfono: </label>
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          id="tlf"
+          name="numTlf"
+        />
+      </div>
     </form>
-</body>
+  </body>
 </html>
