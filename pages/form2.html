@@ -6,10 +6,77 @@
     <title>Document</title>
 </head>
 <body>
+    <ul>
+        <button>
+          <a href="https://../Formularios/pages/form1.html">form1</a>
+        </button>
+        <button><a href="../index.html">Index</a></button>
+        <button><a href="../Formularios/pages/form3.html">form3</a></button>
+        <button><a href="../Formularios/pages/form4.html">form4</a></button>
+        <button><a href="../Formularios/pages/form5.html">form5</a></button>
+      </ul>   
     <form>
+<div>
+<h2>Preferencias</h2>
+<label for="name">Nombre</label>
+        <input type="tex" id="name" name="name" /><br />
+
+        <label for="surname">Apellido</label>
+        <input type="tex" id="surname" name="surname" /><br />
+        <label for="adress">Direccion:</label>
+        <input type="text" id="adress" name="adress" /><br />
+        <textarea
+          cols="50"
+          rows="8"
+          placeholder="Por favor escriba aqui"
+        ></textarea><br>
+
+        <label for="date">Elija una fecha </label>
+      <input type="date" id="date" name="dateControl" /><br />
+</div>
 
 
-        
+<div>
+<h2>Rellene las opciones siguientes </h2>
+<input list="medio_transporte" name="medio_transporte">
+<datalist id="medio_transporte">
+         
+    <option value="Automovil"></option>
+    <option value="Moto"></option>
+    <option value="Autobus"></option>
+
+</datalist><br>
+<label for="date">Elija una fecha </label>
+<input type="date" id="date" name="dateControl" /><br />
+
+<input type="checkbox" id="ideEclipse" name="ide" />
+<label for="ideEclipse">Eclipse</label> 
+
+<input type="checkbox" id="ideNetbeans" name="ide" />
+<label for="ideNetbeans">Netbeans</label> 
+
+<input type="checkbox" id="ideNotepad" name="ide" />
+<label for="ideNotepad">Notepad</label> 
+
+<input type="checkbox" id="ideIdea" name="ide" />
+<label for="ideIdea">IDEA</label> <br>
+
+<label for="dni">DNI</label>
+        <input type="tex" id="dni" name="dni" />
+<label for="name">Nombre</label>
+        <input type="tex" id="name" name="name" />
+<label for="apellidos">Apellidos</label>
+        <input type="tex" id="apellidos" name="apellidos" />
+<label for="email">Email</label>
+        <input type="email" id="email" name="email" /><br />
+        <label for="time">Elija una hora </label>
+<input type="time" id="time" name="timeControl" /><br />
+<label for="color">Elija un color: </label>
+<input type="color" id="color" name="colorControl" />
+
+</div>
+
+
     </form>
 </body>
 </html>
