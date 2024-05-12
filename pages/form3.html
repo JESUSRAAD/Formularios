@@ -1,36 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <ul>
-        <button>
-          <a href="https://../Formularios/pages/form1.html">form1</a>
-        </button>
-        <button><a href="../Formularios/pages/form2.html">form2</a></button>
-        <button><a href="../index.html">Index</a></button>
-        <button><a href="../Formularios/pages/form4.html">form4</a></button>
-        <button><a href="../Formularios/pages/form5.html">form5</a></button>
-      </ul>   
+      <button>
+        <a href="form1.html">form1</a>
+      </button>
+      <button><a href="form2.html">form2</a></button>
+      <button><a href="../index.html">Index</a></button>
+      <button><a href="form4.html">form4</a></button>
+      <button><a href="form5.html">form5</a></button>
+    </ul>
 
     <form>
-<div>
+      <div>
+        <h2>Opciones</h2>
+        <input type="radio" id="conexionWifi" name="conexion" />
+        <label for="conexionWifi">Wifi</label>
 
+        <input type="radio" id="conexionCable" name="conexion" />
+        <label for="conexionCable">Cable</label>
 
-</div>
+        <input type="radio" id="conexionFibra" name="conexion" />
+        <label for="conexionFibra">Fibra</label> <br />
 
+        <label for="time">Elija una hora </label>
+        <input type="time" id="time" name="timeControl" /><br />
+        <label for="foldier">Elija un fichero:</label>
+        <input type="file" id="foldier" /><br />
 
+        <input list="preferencias" name="preferencias" />
+        <datalist id="preferencias">
+          <option value="Ciencias"></option>
+          <option value="Letras"></option></datalist
+        ><br />
+        <textarea
+          cols="45"
+          rows="8"
+          placeholder="Por favor escriba aqui"
+        ></textarea
+        ><br />
+        <label for="date">Elija una fecha </label>
+        <input type="date" id="date" name="dateControl" /><br />
 
+        <input type="checkbox" id="conectorUSb" name="conector" />
+        <label for="conectorUSb">USB</label>
 
-<div>
+        <input type="checkbox" id="conectorParalelo" name="conector" />
+        <label for="conectorParalelo">Paralelo</label>
 
-    
-</div>
+        <input type="checkbox" id="conectorPS2" name="conector" />
+        <label for="conectorPS2">PS2</label> <br />
 
+        <label for="inst">Instituto</label>
+        <input type="tex" id="inst" name="institute" />
+
+        <label for="studys">Estudios elegidos</label>
+        <input type="tex" id="studys" name="studysElection" />
+
+        <label for="name">Nombre</label>
+        <input type="tex" id="name" name="name" />
+
+        <label for="surname">Apellido</label>
+        <input type="tex" id="surname" name="surname" /><br />
+
+        <label for="date">Elija una fecha </label>
+        <input type="date" id="date" name="dateControl" /><br />
+      </div>
+
+      <div>
+        <h2>Por favor, complete las opciones </h2>
+
+        <label for="color">Elija un color: </label>
+        <input type="color" id="color" name="colorControl" /><br>
+
+        <input type="radio" id="procesadorIntel" name="procesador" />
+        <label for="procesadorIntel">Intel</label><br>
+
+        <input type="radio" id="procesadorAmd" name="procesador" />
+        <label for="procesadorAmd">AMD</label><br><br>
+
+        <label for="time">Elija una hora </label>
+        <input type="time" id="time" name="timeControl" /><br />
+
+        <label for="foldier">Elija un fichero:</label>
+        <input type="file" id="foldier" /><br />
+
+        <input list="idioma" name="idioma">
+<datalist id="idioma">
+         
+    <option value="Ingles"></option>
+    <option value="Aleman"></option>
+    <option value="Frances"></option>
+
+</datalist><br>
+<label for="name">Nombre</label>
+        <input type="tex" id="name" name="name" />
+
+        <label for="surname">Apellido</label>
+        <input type="tex" id="surname" name="surname" />
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="mail" />
+        <label for="tlf">Teléfono: </label>
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          id="tlf"
+          name="numTlf"
+        /><br>
+        <input type="checkbox" id="provinciaAlbacete" name="provincia" />
+        <label for="provinciaAlbacete">Albacete</label><br>
+
+        <input type="checkbox" id="provinciaCiudadReal" name="provincia" />
+        <label for="provinciaCiudadReal">Ciudad Real</label><br>
+
+        <input type="checkbox" id="provinciaCuenca" name="provincia" />
+        <label for="provinciaCuenca">Cuenca</label> <br />
+
+        <input type="checkbox" id="provinciaGuadalajara" name="provincia" />
+        <label for="provinciaGuadalajara">Guadalajara</label> <br />
+
+        <input type="checkbox" id="provinciaToledo" name="provincia" />
+        <label for="provinciaToledo">Toledo</label> <br />
+
+        <label for="date">Elija una fecha </label>
+        <input type="date" id="date" name="dateControl" /><br />
+
+        <textarea
+          cols="49"
+          rows="8"
+          placeholder="Utilice este cuadro para escribir"
+        ></textarea
+        >
         
+      </div>
     </form>
-</body>
+  </body>
 </html>
