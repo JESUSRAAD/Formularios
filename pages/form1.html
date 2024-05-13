@@ -15,53 +15,54 @@
       <button><a href="form4.html">form4</a></button>
       <button><a href="form5.html">form5</a></button>
     </ul>
-    <form>
+    <form >
       <div>
-        <h2>Rellene las opciones siguientes</h2>
-        <input type="radio" id="asignaturaLengua" name="asignatura" />
-        <label for="asignaturaLengua">Lenguaje</label><br />
-
-        <input type="radio" id="asignaturaMatematicas" name="asignatura" />
-        <label for="asignaturaMatematicas">Matematicas</label><br />
-
-        <input type="radio" id="asignaturaHistoria" name="asignatura" />
-        <label for="asignaturaHistoria">Historia</label><br />
-
-        <input type="radio" id="asignaturaGeografy" name="asignatura" />
-        <label for="asignaturaGeografy">Geografias</label><br /><br />
-
-        <select name="course" multiple>
-          <option value="lengua">Lenguaje</option>
-          <option value="math">Matematicas</option>
-          <option value="history">Historia</option>
-          <option value="geografy">Geografias</option></select
-        ><br />
-        <label for="color">Elija un color: </label>
-        <input type="color" id="color" name="colorControl" /><br />
-
-        <label for="inst">Instituto</label>
-        <input type="tex" id="inst" name="inst" />
-
-        <label for="studys">Estudios elegidos</label>
-        <input type="tex" id="studys" name="studysElection" /><br />
-        <label for="foldier">Elija un fichero:</label>
-        <input type="file" id="foldier" /><br />
-
-        <input type="checkbox" id="monday" name="week" />
-        <label for="monday">Lunes</label> <br />
-        <input type="checkbox" id="Tuesday" name="week" />
-        <label for="Tuesday">Martes</label> <br />
-        <input type="checkbox" id="Wednesday" name="week" />
-        <label for="Wednesday">Miercoles</label> <br />
-        <input type="checkbox" id="Thursday" name="week" />
-        <label for="Thursday">Jueves</label> <br />
-        <input type="checkbox" id="Friday" name="week" />
-        <label for="Friday">Viernes</label> <br />
-        <input type="checkbox" id="Saturday" name="week" />
-        <label for="Saturday">Sabado</label> <br />
+        <fieldset ><legend><h2>Regene las opciones siguientes</h2></legend>
+          <input type="radio" id="asignaturaLengua" name="asignatura" />
+          <label for="asignaturaLengua">Lenguaje</label><br />
+          
+          <input type="radio" id="asignaturaMatematicas" name="asignatura" />
+          <label for="asignaturaMatematicas">Matematicas</label><br />
+          
+          <input type="radio" id="asignaturaHistoria" name="asignatura" />
+          <label for="asignaturaHistoria">Historia</label><br />
+          
+          <input type="radio" id="asignaturaGeografy" name="asignatura" />
+          <label for="asignaturaGeografy">Geografias</label><br /><br />
+          
+          <select name="asignatura" multiple>
+              <option value="lengua">Lenguaje</option>
+              <option value="math">Matematicas</option>
+              <option value="history">Historia</option>
+              <option value="geografy">Geografias</option></select
+              ><br />
+              <label for="color">Elija un color: </label>
+              <input type="color" id="color" name="colorControl" /><br />
+              
+              <label for="inst">Instituto</label>
+              <input type="tex" id="inst" name="inst" />
+              
+              <label for="studys">Estudios elegidos</label>
+              <input type="tex" id="studys" name="studysElection" /><br />
+              <label for="foldier">Elija un fichero:</label>
+              <input type="file" id="foldier" /><br />
+              
+              <input type="checkbox" id="diaLunes" name="dia" />
+              <label for="diaLunes">Lunes</label> <br />
+              <input type="checkbox" id="diaMartes" name="dia" />
+              <label for="diaMartes">Martes</label> <br />
+              <input type="checkbox" id="diaMiercoles" name="dia" />
+              <label for="diaMiercoles">Miercoles</label> <br />
+              <input type="checkbox" id="diaJueves" name="dia" />
+              <label for="diaJueves">Jueves</label> <br />
+              <input type="checkbox" id="diaViernes" name="dia" />
+              <label for="diaViernes">Viernes</label> <br />
+              <input type="checkbox" id="diaSabado" name="dia" />
+              <label for="diaSabado">Sabado</label> <br />
+            </fieldset>
       </div>
       <div>
-        <h2>Por favor, complete estas opciones</h2>
+        <fieldset ><legend>  <h2>Por favor, complete estas opciones</h2></legend>
 
         <textarea
           cols="45"
@@ -70,7 +71,7 @@
         ></textarea>
         <br />
         <label for="color">Elija un color: </label>
-        <input type="color" id="color" name="biciColor" /><br />
+        <input type="color" id="color" name="colorControl" /><br />
 
         <input type="radio" id="lenguajeJava" name="Lenguaje" />
         <label for="lenguajeJava">Java</label><br />
@@ -97,7 +98,7 @@
           pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
           id="tlf"
           name="numTlf"
-        />
+        /></fieldset>
       </div>
     </form>
   </body>

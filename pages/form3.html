@@ -18,7 +18,7 @@
 
     <form>
       <div>
-        <h2>Opciones</h2>
+        <fieldset ><legend><h2>Opciones</h2></legend> 
         <input type="radio" id="conexionWifi" name="conexion" />
         <label for="conexionWifi">Wifi</label>
 
@@ -70,19 +70,20 @@
 
         <label for="date">Elija una fecha </label>
         <input type="date" id="date" name="dateControl" /><br />
+        </fieldset>
       </div>
 
       <div>
-        <h2>Por favor, complete las opciones </h2>
+        <fieldset ><legend>   <h2>Por favor, complete las opciones</h2></legend>
 
         <label for="color">Elija un color: </label>
-        <input type="color" id="color" name="colorControl" /><br>
+        <input type="color" id="color" name="colorControl" /><br />
 
         <input type="radio" id="procesadorIntel" name="procesador" />
-        <label for="procesadorIntel">Intel</label><br>
+        <label for="procesadorIntel">Intel</label><br />
 
         <input type="radio" id="procesadorAmd" name="procesador" />
-        <label for="procesadorAmd">AMD</label><br><br>
+        <label for="procesadorAmd">AMD</label><br /><br />
 
         <label for="time">Elija una hora </label>
         <input type="time" id="time" name="timeControl" /><br />
@@ -90,15 +91,13 @@
         <label for="foldier">Elija un fichero:</label>
         <input type="file" id="foldier" /><br />
 
-        <input list="idioma" name="idioma">
-<datalist id="idioma">
-         
-    <option value="Ingles"></option>
-    <option value="Aleman"></option>
-    <option value="Frances"></option>
-
-</datalist><br>
-<label for="name">Nombre</label>
+        <input list="idioma" name="idioma" />
+        <datalist id="idioma">
+          <option value="Ingles"></option>
+          <option value="Aleman"></option>
+          <option value="Frances"></option></datalist
+        ><br />
+        <label for="name">Nombre</label>
         <input type="tex" id="name" name="name" />
 
         <label for="surname">Apellido</label>
@@ -111,12 +110,12 @@
           pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
           id="tlf"
           name="numTlf"
-        /><br>
+        /><br />
         <input type="checkbox" id="provinciaAlbacete" name="provincia" />
-        <label for="provinciaAlbacete">Albacete</label><br>
+        <label for="provinciaAlbacete">Albacete</label><br />
 
         <input type="checkbox" id="provinciaCiudadReal" name="provincia" />
-        <label for="provinciaCiudadReal">Ciudad Real</label><br>
+        <label for="provinciaCiudadReal">Ciudad Real</label><br />
 
         <input type="checkbox" id="provinciaCuenca" name="provincia" />
         <label for="provinciaCuenca">Cuenca</label> <br />
@@ -134,9 +133,8 @@
           cols="49"
           rows="8"
           placeholder="Utilice este cuadro para escribir"
-        ></textarea
-        >
-        
+        ></textarea>
+        </fieldset>
       </div>
     </form>
   </body>

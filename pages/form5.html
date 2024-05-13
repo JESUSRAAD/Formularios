@@ -1,35 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <ul>
-        <button>
-          <a href="form1.html">form1</a>
-        </button>
-        <button><a href="form2.html">form2</a></button>
-        <button><a href="form3.html">form3</a></button>
-        <button><a href="form4.html">form4</a></button>
-        <button><a href="../index.html">Index</a></button>
-      </ul>   
+      <button>
+        <a href="form1.html">form1</a>
+      </button>
+      <button><a href="form2.html">form2</a></button>
+      <button><a href="form3.html">form3</a></button>
+      <button><a href="form4.html">form4</a></button>
+      <button><a href="../index.html">Index</a></button>
+    </ul>
     <form>
-        <div>
+      <div>
+        <fieldset ><legend>  <h2>complete por favor</h2></legend>
 
+        <label for="time">Elija una hora </label>
+        <input type="time" id="time" name="timeControl" /><br />
 
-        </div>
-        
-        
-        
-        
-        <div>
-        
-            
-        </div>
+        <textarea
+          cols="45"
+          rows="6"
+          placeholder="Utilice este cuadro para escribir"
+        ></textarea
+        ><br />
 
-        
+        <input type="radio" id="lenguajeJava" name="Lenguaje" />
+        <label for="lenguajeJava">Java</label><br />
+
+        <input type="radio" id="lenguajePython" name="Lenguaje" />
+        <label for="lenguajePython">Python</label><br />
+        <input type="radio" id="lenguajeHTML" name="Lenguaje" />
+        <label for="lenguajeHTML">HTML</label><br />
+
+        <input type="radio" id="lenguajeVisual_basic" name="Lenguaje" />
+        <label for="lenguajeVisual_basic">Visual Basic</label><br />
+
+        <label for="foldier">Elija un fichero:</label>
+        <input type="file" id="foldier" /><br />
+
+        <label for="date">Elija una fecha </label>
+        <input type="date" id="date" name="dateControl" /><br />
+
+        <label for="color">Elija un color: </label>
+        <input type="color" id="color" name="colorControl" /><br />
+
+        <label for="time">Elija una hora </label>
+        <input type="time" id="time" name="timeControl" /><br />
+
+        <label for="foldier">Elija un fichero:</label>
+        <input type="file" id="foldier" /><br />
+
+        <input type="radio" id="procesadorAmd" name="procesador" />
+        <label for="procesadorAmd">AMD</label>
+
+        <input type="radio" id="procesadorIntel_I5" name="procesador" />
+        <label for="procesadorIntel_I5">Intel i5</label>
+
+        <input type="radio" id="procesadorIntel_I7" name="procesador" />
+        <label for="procesadorIntel_I7">Intel i7</label> <br />
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset ><legend>  <h2>Ellene las opciones siguientes</h2></legend>
+
+        <input type="radio" id="procesadorIntel" name="procesador" />
+        <label for="procesadorIntel">Intel</label><br />
+
+        <input type="radio" id="procesadorAmd" name="procesador" />
+        <label for="procesadorAmd">AMD</label><br />
+
+        <textarea
+          cols="55"
+          rows="4"
+          placeholder="Utilice este recuadro,, por favor"
+        ></textarea
+        ><br />
+
+        <label for="dni">DNI</label>
+        <input type="tex" id="dni" name="dni" />
+
+        <label for="name">Nombre</label>
+        <input type="tex" id="name" name="name" />
+        <label for="surname">Apellido</label>
+        <input type="tex" id="surname" name="surname" />
+
+        <label for="tlf">Teléfono: </label>
+        <input
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          id="tlf"
+          name="numTlf"
+        /><br />
+
+        <label for="color">Elija un color: </label>
+        <input type="color" id="color" name="colorControl" /><br />
+        </fieldset>
+      </div>
     </form>
-</body>
+  </body>
 </html>
